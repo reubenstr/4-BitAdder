@@ -11,6 +11,10 @@
   graphical data paths.
 
   Upon no user activity, automatic mode randomly generates input values for effect.
+
+  Hardware:
+    MCU: Arduino Nano (this version contains UNO firmware)
+    LED Drivers: 2x PCA9685
 */
 
 #include <Arduino.h>
@@ -19,7 +23,8 @@
 PCA9685 pwmController1;
 PCA9685 pwmController2;
 
-#define MAX_PWM 4095
+// LED brigtness: 0 - 4095
+#define MAX_PWM 2048
 
 #define PIN_TOGGLE_A0 2
 #define PIN_TOGGLE_A1 3
