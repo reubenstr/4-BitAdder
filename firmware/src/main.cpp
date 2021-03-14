@@ -1,20 +1,22 @@
-/*
-  4-Bit Adder
+ /*
+	4-Bit Adder
 
   Reuben Strangelove
 
-  Designed: Summer 2015
-  Created: Fall 2020
+	Designed: Summer 2015
+	Created: Fall 2020
 
-  4-Bit adder sums two 4-bit ports configured by the user via toggle switches.
-  The resulting combinational logic is displayed via LEDs combined with engraved 
-  graphical data paths.
+	4-Bit adder sums two 4-bit ports configured by the user via toggle switches.
+	The resulting combinational logic is displayed via LEDs combined with engraved 
+	graphical data paths.
 
-  Upon no user activity, automatic mode randomly generates input values for effect.
+	Upon no user activity, automatic mode randomly generates input values for effect.
 
-  Hardware:
-    MCU: Arduino Nano (this version contains UNO firmware)
-    LED Drivers: 2x PCA9685
+	Microcontroller: 
+    Arduino Nano (AtMega328p)	
+	
+	LED Drivers: 
+    2x PCA9685 via I2C
 */
 
 #include <Arduino.h>
